@@ -1,0 +1,93 @@
+
+body{
+    margin: 0; 
+    background-color: #191919;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    width: 700px;
+    margin: 26px auto;
+    color: white;
+}
+input{
+    width: 75%;
+    border: none;
+    padding: 16px;
+    font-size: 18px;
+    background-color: #6464643f;
+    color: white;
+    border: none;
+    box-sizing: border-box;
+}
+input:focus{
+    outline: none;
+    border: none;
+}
+.search{
+    display: flex;
+}
+.btn{
+    background-color: red;
+    color: white;
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    width: 25%;
+    cursor: pointer;
+}
+
+
+
+
+.movie-container{
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    margin: 26px auto;
+    color: rgba(255, 255, 255, 0.829);
+}
+.movie-container p{
+    color: rgb(0, 0, 192);
+    font-weight: 500;
+}
+.movie-container p span{
+    color: #fff;
+}
+.poster{
+    position: relative;
+}
+#ratings{
+   position: absolute;
+   bottom: 0px;
+   margin: 16px;
+   padding: 4px 12px;
+   background-color: #fff;
+   color: #191919;
+   border-radius: 5px;
+}
+
+
+
+
+/* loader styling */
+.movie-loader{
+    display: flex;
+    justify-content: center;
+}
+.loader{
+    border: 2px solid #f3f3f362; /* Light grey */
+    border-top: 2px solid #db3434; /* Blue */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .d-none{
+    display: none;
+}
